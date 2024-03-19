@@ -17,10 +17,11 @@ body {
 /* HEADER  */
 div#headerWrapper {
     grid-row-start: 1;
+    background-color: $fontColor;
 }
 header {
     display: grid;
-    grid-template-columns: 51px auto 44px;
+    grid-template-columns: 51px auto;
     align-items: center;
 	padding: .5rem 2vw;
     div#phone {
@@ -30,7 +31,10 @@ header {
         font-size: 1.6rem;
         font-weight: $boldWeight;
         padding-left: .5rem;
-        color: $fontColor;
+        color: white;
+    }
+    ion-icon {
+        color: white;
     }
 } // end header
 
@@ -41,7 +45,7 @@ div#navWrapper {
 div#hamburger a, div#closex a {
     display: block;
     padding: .8rem 2vw;
-    color: $fontColor;
+    color: white;
     text-decoration: none;
     text-align: right;
 }
@@ -67,7 +71,7 @@ nav {
         color: #F2937E;
     }
     ul li.active a {
-        background-color: lighten(#F2937E, 45%);
+        background-color: lighten(#F2937E, 20%);
     }
 }
 /* MAIN  */
@@ -148,5 +152,4 @@ footer {
 	padding: 1rem 0;
 	color: white;
 	text-align: center;
-	a{color: white;}
 }
