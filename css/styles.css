@@ -140,7 +140,7 @@ header h1 {
   font-size: 1.6rem;
   font-weight: 600;
   padding-left: 0.5rem;
-  color: #03A6A6;
+  color: #025373;
 }
 
 /* NAVIGATION STUFF GOES HERE  */
@@ -196,7 +196,7 @@ main p {
 main h1 {
   padding: 1rem 2vw 0.5rem 2vw;
   font-size: 1.5rem;
-  color: #03A6A6;
+  color: #025373;
   font-weight: 400;
 }
 main .hero {
@@ -218,7 +218,7 @@ form.my-form label {
 }
 form.my-form h3 {
   font-size: 0.9rem;
-  color: #03A6A6;
+  color: #025373;
   margin: 1.5rem 0 0.2rem 0;
   border-bottom: 1px solid #F2937E;
 }
@@ -245,7 +245,7 @@ form.my-form input:required:valid {
 }
 form.my-form input[type=submit] {
   border: none;
-  background-color: #03A6A6;
+  background-color: #025373;
   color: white;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
@@ -265,11 +265,11 @@ form.my-form input[type=submit] {
 footer {
   font-size: 0.85rem;
   padding: 1rem 0;
-  color: #025373;
+  color: black;
   text-align: center;
 }
 footer a {
-  color: white;
+  color: black;
 }
 
 @media only screen and (min-width: 35rem) {

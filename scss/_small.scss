@@ -30,7 +30,7 @@ header {
         font-size: 1.6rem;
         font-weight: $boldWeight;
         padding-left: .5rem;
-        color: #03A6A6;
+        color: $fontColor;
     }
 } // end header
 
@@ -79,7 +79,7 @@ main {
 	h1 {
         padding: 1rem 2vw .5rem 2vw; 
         font-size: 1.5rem; 
-        color: #03A6A6;
+        color: $fontColor;
         font-weight: $normalWeight
     }
     .hero {width: 100%;}
@@ -98,7 +98,7 @@ form.my-form {
     }
     h3 {
         font-size: .9rem;
-        color: #03A6A6;
+        color: $fontColor;
         margin: 1.5rem 0 .2rem 0;
         border-bottom: 1px solid #F2937E;
     }
@@ -125,7 +125,7 @@ form.my-form {
     }
     input[type=submit] {
         border: none;
-        background-color: #03A6A6;
+        background-color: $fontColor;
         color: white;
         border-radius: 1rem;
         padding: .75rem 1.5rem;
@@ -146,7 +146,7 @@ form.my-form {
 footer {
     font-size: .85rem;
 	padding: 1rem 0;
-	color: $fontColor;
+	color: black;
 	text-align: center;
-	a{color: white;}
+	a{color: black;}
 }
