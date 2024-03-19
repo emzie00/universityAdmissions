@@ -140,13 +140,13 @@ form.my-form {
 
 /* FOOTER  */
 #footerWrapper {
-    background-color: #03A6A6;
+    background-color: $fontColor;
     grid-row-start: 3;
 }
 footer {
     font-size: .85rem;
 	padding: 1rem 0;
-	color: black;
+	color: white;
 	text-align: center;
-	a{color: black;}
+	a{color: white;}
 }
