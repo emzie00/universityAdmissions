@@ -1,0 +1,39 @@
+#headerWrapper {border-bottom: 1px solid #F2937E;}
+header {
+    grid-template-columns: 51px auto auto;
+    div#phone {
+        display: block;
+        justify-self: end;
+        a {
+            color: $fontColor;
+            text-decoration: none;
+            font-weight: $normalWeight;
+            font-size: 1.5rem;
+        }
+        a:hover {
+            color: #F2937E;
+        }
+    }
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+div#hamburger, div#closex {
+    display: none;
+}
+nav {
+    height: auto;
+    ul {
+        display: flex;
+        justify-content: end;
+        border: none;
+        li {
+            border: none;
+        }
+    }
+}
+div#headerWrapper {
+    grid-row-start: 1;
+}
+div#navWrapper {grid-row-start: 2;}
+div#mainWrapper {grid-row-start: 3;}
+div#footerWrapper {grid-row-start: 4;}

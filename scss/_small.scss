@@ -1,0 +1,152 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+    display: grid;
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $normalWeight;
+    min-width: 320px;
+}
+
+
+/* HEADER  */
+div#headerWrapper {
+    grid-row-start: 1;
+}
+header {
+    display: grid;
+    grid-template-columns: 51px auto 44px;
+    align-items: center;
+	padding: .5rem 2vw;
+    div#phone {
+        display: none;
+    }
+	h1 {
+        font-size: 1.6rem;
+        font-weight: $boldWeight;
+        padding-left: .5rem;
+        color: #03A6A6;
+    }
+} // end header
+
+/* NAVIGATION STUFF GOES HERE  */
+div#navWrapper {
+    grid-row-start: 4;
+}
+div#hamburger a, div#closex a {
+    display: block;
+    padding: .8rem 2vw;
+    color: $fontColor;
+    text-decoration: none;
+    text-align: right;
+}
+div#closex a {
+    margin-right: 2vw;
+}
+nav {
+    height: 100vh;
+    ul {
+        border-bottom: 1px solid $fontColor;
+    }
+    ul li {
+        border-bottom: 1px solid $fontColor;
+    }
+    ul li a {
+        display: block;
+        color: $fontColor;
+        padding: .9rem 2vw;
+        text-decoration: none;
+        text-align: right;
+    }
+    ul li a:hover {
+        color: #F2937E;
+    }
+    ul li.active a {
+        background-color: lighten(#F2937E, 45%);
+    }
+}
+/* MAIN  */
+div#mainWrapper {
+    grid-row-start: 2;
+}
+main {
+ 	p {padding: .5rem 2vw; color: $fontColor; line-height: 125%;}
+	h1 {
+        padding: 1rem 2vw .5rem 2vw; 
+        font-size: 1.5rem; 
+        color: #03A6A6;
+        font-weight: $normalWeight
+    }
+    .hero {width: 100%;}
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+} // end main
+form.my-form {
+    margin: 1rem $gutter;
+    label {
+        display: block;
+        font-size: .8rem;
+        color: $fontColor;
+        padding-top: .2rem;
+    }
+    h3 {
+        font-size: .9rem;
+        color: #03A6A6;
+        margin: 1.5rem 0 .2rem 0;
+        border-bottom: 1px solid #F2937E;
+    }
+    input[type=text], input[type=tel], input[type=email], input[type=number], input[type=password], select {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        border: solid 1px #F25749;
+        border-radius: 3px 3px 0 0;
+        border-bottom-width: 5px;
+        border-bottom-color: #97BF41;
+        font-size: 1rem;
+        color: $fontColor;
+        width: 250px;
+        padding: .5rem $gutter;
+    }
+    input:required {
+        border-bottom-color: #F25749;
+    }
+    input:focus {
+        border-bottom-color: #03A6A6;
+    }
+    input:required:valid {
+        border-bottom-color: #97BF41;
+    }
+    input[type=submit] {
+        border: none;
+        background-color: #03A6A6;
+        color: white;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 2rem 0;
+        width: 250px;
+        font-size: 1.2rem;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+}
+
+
+/* FOOTER  */
+#footerWrapper {
+    background-color: #03A6A6;
+    grid-row-start: 3;
+}
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: $fontColor;
+	text-align: center;
+	a{color: white;}
+}
